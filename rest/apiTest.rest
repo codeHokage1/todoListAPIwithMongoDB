@@ -7,7 +7,7 @@ GET http://localhost:8008/todo HTTP/1.1
 
 
 
-### Create item and add to the todo list
+### Create item and add to the todo list: add only title and description, timestamp and id will be automatically added
 POST http://localhost:8008/todo HTTP/1.1
 Content-Type: application/json
 
