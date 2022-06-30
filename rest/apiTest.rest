@@ -1,0 +1,28 @@
+### Home Page
+GET http://localhost:8008/ HTTP/1.1
+
+
+### Get all items in the todo list
+GET http://localhost:8008/todo HTTP/1.1
+
+
+
+### Create item and add to the todo list
+POST http://localhost:8008/todo HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Take coding lessons",
+    "description": "Hook my headphones on, check out the next lesson and code!"
+}
+
+### Update an existing task item
+PUT http://localhost:8008/todo/62bd2388f607d1a065ccdc6a HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Make breakfast"
+}
+
+### Delet an existing task item
+DELETE http://localhost:8008/todo/62bd4e9a3c92e2102bd3f68d HTTP/1.1
